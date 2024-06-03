@@ -2,7 +2,7 @@
 
 ## Cambios Recientes:
 - La relacion entre cliente y biblioteca y la entidad biblioteca paso a ser una relacion directa entre cliente y producto aun falta corregir en el informe.
-- Se puede agregar las entidades "logro" y "relacion" con juego o una relacion "sigue" entre jugadores y publishers para reemplazar a las tablas que se perdieron.
+- Se puede agregar las entidades "logro" y hacer una relacion con juego o una relacion "sigue" entre jugadores y publishers para reemplazar a las tablas que se perdieron.
 
 ## Posibles Actualizaciones:
 Agregar triggers:
