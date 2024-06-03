@@ -1,7 +1,8 @@
 # Proyecto de Base de Datos
 
-##Cambios Recientes:
-- La relacion entre cliente y biblioteca y la entidad biblioteca paso a ser una relacion directa entre cliente y producto aun falta corregir en el informe 
+## Cambios Recientes:
+- La relacion entre cliente y biblioteca y la entidad biblioteca paso a ser una relacion directa entre cliente y producto aun falta corregir en el informe.
+- Se puede agregar las entidades "logro" y "relacion" con juego o una relacion entre jugadores y publishers para reemplazar a las tablas que se perdieron
 
 ## Diagrama Entidad-Relacion:
 
