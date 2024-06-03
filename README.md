@@ -6,8 +6,8 @@
 
 ## Posibles Actualizaciones:
 - Agregar triggers:
-  -- para que cada vez que se registre una clasificacion de una reseña se actualiza el promedio de la puntuacion en la publicacion.
-  -- Si se hace la tabla "sigue", se puede agregar un trigger que cada vez que un cliente siga a un publisher el numero de seguidores se actualice. 
+-- para que cada vez que se registre una clasificacion de una reseña se actualiza el promedio de la puntuacion en la publicacion.
+-- Si se hace la tabla "sigue", se puede agregar un trigger que cada vez que un cliente siga a un publisher el numero de seguidores se actualice. 
 
 ## Diagrama Entidad-Relacion:
 
