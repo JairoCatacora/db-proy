@@ -21,7 +21,7 @@ JOIN compra c ON a.compra_id = c.compra_id
 JOIN publicacion pub ON a.publicacion_id = pub.publicacion_id
 JOIN producto p ON pub.producto_id = p.producto_id
 WHERE c.fecha_compra BETWEEN '2023-09-01' AND '2023-12-31'
-AND (c.pais = 'Mexico' OR c.pais = 'EEUU' OR c.pais = 'Espanha' OR c.pais = 'Peru' OR c.pais = 'Colombia')
+AND (c.pais = 'Mexico' OR c.pais = 'EEUU' OR c.pais = 'Espanha')
 GROUP BY a.tienda_region
 ORDER BY total_ventas DESC
 LIMIT 10;
