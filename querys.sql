@@ -14,14 +14,16 @@ GROUP BY p.producto_id, pr.nombre
 ORDER BY cantidad_ventas DESC
 LIMIT 5;
 
--- Regiones con mayor cantidad de ventas en cierta temporada y filtrados por paises
-SELECT a.tienda_region AS region, COUNT(*) AS cantidad_ventas, SUM(pub.precio) AS total_ventas
+-- Regiones con mayor cantidad de ventas en cierta temporada, filtrados por paises de compra, precio y el anho de lanzamiento
+EXPLAIN ANALYSE SELECT a.tienda_region AS region, COUNT(*) AS cantidad_ventas, SUM(pub.precio) AS total_ventas
 FROM adquiere a
 JOIN compra c ON a.compra_id = c.compra_id
 JOIN publicacion pub ON a.publicacion_id = pub.publicacion_id
 JOIN producto p ON pub.producto_id = p.producto_id
-WHERE c.fecha_compra BETWEEN '2023-09-01' AND '2023-12-31'
+WHERE c.fecha_compra BETWEEN '2023-06-01' AND '2023-12-31'
+AND EXTRACT( YEAR FROM pub.fecha_lanzamiento) = '2023' 
 AND (c.pais = 'Mexico' OR c.pais = 'EEUU' OR c.pais = 'Espanha')
+AND pub.precio BETWEEN 40 AND 60
 GROUP BY a.tienda_region
 ORDER BY total_ventas DESC
 LIMIT 10;
