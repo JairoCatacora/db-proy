@@ -16,7 +16,7 @@ CREATE TABLE compra (
      pais VARCHAR(20) NOT NULL
 );
 
-ALTER TABLE compra ADD CONSTRAINT valid_com_id CHECK ( cliente_id LIKE 'COM%');
+ALTER TABLE compra ADD CONSTRAINT valid_com_id CHECK ( compra_id LIKE 'COM%');
 
 --Tabla Tienda
 CREATE TABLE tienda (
